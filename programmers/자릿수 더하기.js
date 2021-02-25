@@ -6,3 +6,9 @@ function solution(n) {
   }
   return answer;
 }
+
+// reduce를 사용
+function solutionWithReduce(n) {
+  const toArr = n.toString().split("");
+  return toArr.reduce((acc, cur) => +acc + +cur);
+}
